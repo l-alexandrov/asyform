@@ -16,16 +16,13 @@ module.exports = (env, argv) => {
         },
 
         entry: {
-            'asyform': [`./src/asyform.js`],
+            'asyform': [`./src/index.js`],
         },
-        // library building properties for (1-5)
         output: {
             path: path.join(__dirname, '/'),
             filename: argv.mode === 'production' ? `[name].min.js` : `[name].develop.js`,
-            library: '',
-            libraryExport: '',
+            library: '$',
             libraryTarget: 'umd',
-            globalObject: 'this',
         },
         optimization: {
             minimizer: [new TerserPlugin({

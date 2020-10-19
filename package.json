@@ -7,9 +7,8 @@
     "build:bundlejs:prd": "webpack --config webpack.config.build-lib.js --mode production",
     "build:bundlejs:dev": "webpack --config webpack.config.build-lib.js --mode development",
     "build": "run-s build:bundlejs:prd build:bundlejs:dev",
-    "exec:nodejs": "node client/example_for_nodejs.js",
     "exec:browser": "webpack-dev-server --config webpack.config.exec-open-browser.js",
-    "exec:all": "run-p exec:nodejs exec:browser",
+    "exec:all": "run-p exec:browser",
     "start": "run-s build exec:all"
   },
   "author": "Lyuboslav Alexandrov (https://github.com/lubo1998)",

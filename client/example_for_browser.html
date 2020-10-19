@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use library directly with &lt;script&gt; tag</title>
+</head>
+<body>
+<h3>Use library directly with &lt;script&gt; tag</h3>
+<form action="script.php" method="POST" class="async">
+    <label for="testTB">Test TB:</label>
+    <input type="text" name="test" id="testTB" required>
+    <input type="submit" value="Submit">
+</form>
+<script src="../asyform.min.js"></script>
+<script>
+    $.asyform('form.async');
+</script>
+</body>
+</html>
