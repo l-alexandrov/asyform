@@ -1,0 +1,43 @@
+{
+  "name": "asyform",
+  "version": "1.0.0",
+  "description": "Submits web forms asynchronously.",
+  "main": "asyform.min.js",
+  "scripts": {
+    "build:bundlejs:prd": "webpack --config webpack.config.build-lib.js --mode production",
+    "build:bundlejs:dev": "webpack --config webpack.config.build-lib.js --mode development",
+    "build": "run-s build:bundlejs:prd build:bundlejs:dev",
+    "exec:nodejs": "node client/example_for_nodejs.js",
+    "exec:browser": "webpack-dev-server --config webpack.config.exec-open-browser.js",
+    "exec:all": "run-p exec:nodejs exec:browser",
+    "start": "run-s build exec:all"
+  },
+  "author": "Lyuboslav Alexandrov (https://github.com/lubo1998)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lubo1998/asyform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lubo1998/asyform/issues"
+  },
+  "homepage": "https://github.com/lubo1998/asyform#readme",
+  "keywords": [
+    "async",
+    "form",
+    "asynchronously",
+    "asyform",
+    "web",
+    "REST"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
