@@ -1,5 +1,5 @@
 {
-  "name": "asyform",
+  "name": "@l-alexandrov/asyform",
   "version": "1.0.0",
   "description": "Submits web forms asynchronously.",
   "main": "asyform.min.js",
@@ -11,16 +11,16 @@
     "exec:all": "run-p exec:browser",
     "start": "run-s build exec:all"
   },
-  "author": "Lyuboslav Alexandrov (https://github.com/lubo1998)",
+  "author": "Lyuboslav Alexandrov (https://github.com/l-alexandrov)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lubo1998/asyform.git"
+    "url": "git+https://github.com/l-alexandrov/asyform.git"
   },
   "bugs": {
-    "url": "https://github.com/lubo1998/asyform/issues"
+    "url": "https://github.com/l-alexandrov/asyform/issues"
   },
-  "homepage": "https://github.com/lubo1998/asyform#readme",
+  "homepage": "https://github.com/l-alexandrov/asyform#readme",
   "keywords": [
     "async",
     "form",
@@ -29,6 +29,9 @@
     "web",
     "REST"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.3",
